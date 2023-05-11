@@ -6,7 +6,7 @@ from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import EMOJIOS, IMG, STICKER
-from Adhya import BOT_NAME, AdhyaBot, dev
+from Adhya import BOT_NAME, AdhyaBot, adhya
 from Adhya.database.chats import add_served_chat
 from Adhya.database.users import add_served_user
 from Adhya.modules.helpers import (
@@ -41,7 +41,7 @@ async def start(_, m: Message):
         await m.reply_photo(
             photo=random.choice(IMG),
             caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME}**\n**➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]**\n<b>||๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ||</b>""",
-            reply_markup=InlineKeyboardMarkup(DEV_OP),
+            reply_markup=InlineKeyboardMarkup(KATIL_OP),
         )
         await add_served_user(m.from_user.id)
     else:
