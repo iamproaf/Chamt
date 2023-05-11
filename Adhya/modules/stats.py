@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Adhya import OWNER, dev
+from Adhya import OWNER, adhya
 from Adhya.database.chats import get_served_chats
 from Adhya.database.users import get_served_users
 
