@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 from config import IMG, OWNER_USERNAME, STICKER
 from Adhya import BOT_NAME, adhya
 from Adhya.database.chats import add_served_chat
-from AdhyaAdhya.database.users import add_served_user
+from Adhya.database.users import add_served_user
 from Adhya.modules.helpers import PNG_BTN
 
 
